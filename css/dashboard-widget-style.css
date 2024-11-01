@@ -1,0 +1,40 @@
+﻿
+#rast-dashboard {
+    margin: -12px 0;
+}
+
+.rast-block {
+    margin: 0 -12px;
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+}
+
+    .rast-block:last-child {
+        border-bottom: none;
+    }
+
+    .rast-block .item .title {
+        display: inline-block;
+        color: #72777c;
+        margin-right: 5px;
+        min-width: 150px;
+    }
+
+ul.rast-latest-activity {
+    margin: 0;
+    padding: 3px 0;
+}
+
+ul.rast-latest-activity li {
+    display: inline;
+    padding: 0 2px;
+}
+
+    ul.rast-latest-activity li:first-child {
+        padding-left: 0;
+    }
+
+    ul.rast-latest-activity li:last-child {
+        padding-right: 0;
+    }
+

@@ -1,0 +1,218 @@
+*, ::after, ::before {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%
+}
+
+.row {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.col-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.666667%;
+            flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+}
+
+.col-2, .col-6 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.plagiate-detail p {
+    margin-bottom: 7px;
+}
+
+.source-url a {
+    text-decoration: none;
+    color: #6396a6;
+    font-weight: 500;
+}
+
+.source-url .dashicons-share-alt2 {
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.rast-text-intro-board {
+    margin: 3.5em;
+    padding: 0.5em;
+    font-size: 15px;
+}
+
+.rast-intro-par {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+.rast-report-text {
+    margin-top: 0.5em;
+    line-height: 1.5;
+}
+
+.progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    font-size: .75rem;
+    line-height: 1rem;
+    text-align: center;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+}
+
+#progress-value {
+    text-align: center;
+    margin-bottom: 0;
+    color: #337ab7;
+}
+
+.progress-bar {
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: -o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 1rem 1rem;
+    background-color: #337ab7;
+    height: 1rem;
+    line-height: 1rem;
+    color: #fff;
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+.alert {
+    padding: 0.4rem 0.9rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    background-color: #ffcccb;
+    border-color: #ab757c;
+    line-height: 41px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.alert .dashicons-warning {
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+    color: #c85b5e;
+}
+
+.plagiarized-fragments-header {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#rast-last-checked {
+    float: right;
+}
+
+#rast-report-info {
+    padding-top: 15px;
+}
+
+.results {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+#rast-report-info .doughnut {
+    height: 66px;
+    width: 66px;
+    margin: 0 30px;
+}
+
+#rast-report-info .doughnut path:hover {
+    stroke-opacity: 0.8;
+}
+
+#rast-report-info .doughnut #outer-circle:hover {
+    fill-opacity: 0.8;
+}
+
+#rast-report-info p {
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.uniqueness {
+    color: #1ba694;
+    text-align: center;
+    margin: 0 30px;
+}
+
+#rast-post-uniqueness,
+#rast-post-plagiarized {
+    font-size: 55px;
+    line-height: 40px;
+}
+
+.plagiarized {
+    color: #c55754;
+    text-align: center;
+    margin: 0 0 0 30px;
+}
+
+#rast-check-post-again {
+    padding: 0;
+}
+
+#check-again {
+    padding: 0 25px;
+}
+
+#rast-report-fragments table {
+    table-layout: fixed;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+
+#rast-report-fragments table th {
+    vertical-align: bottom;
+    color: #495057;
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+#rast-report-fragments table th,
+#rast-report-fragments table td {
+    padding: .75rem;
+    vertical-align: top;
+}
+
+#rast-report-fragments table p {
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    overflow: hidden;
+}
